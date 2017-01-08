@@ -419,6 +419,8 @@ function Update-Specs-Projects {
                          @("Sitecore.Habitat.Website.Specflow", "Habitat") `
                          @(($solutionName + ".Website.Specflow"), $solutionName)
 
+    Rename-Item -Path ($specsFolderPath + "\" + $solutionName + ".Website\Sitecore." + $solutionName + ".Website.Specflow.csproj") -NewName ($specsFolderPath + "\" + $solutionName + ".Website\" + $solutionName + ".Website.Specflow.csproj") -ErrorAction SilentlyContinue
+
     Msg-Info "  --> Done`n"
 }
 

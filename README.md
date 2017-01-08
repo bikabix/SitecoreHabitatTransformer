@@ -4,7 +4,7 @@ This project contains a single windows Powershell script TransformHabitat.ps1 wh
 
 * Updates the Habitat visual studio solution to a custom-named solution. This includes project files, solution files, Unicorn serialization files, config files, javascript files when necessary.
 
-Note that this script only works on a freshly cloned Habitat. See below or the beginning of the script for more information.
+Note that this script only works on a freshly cloned Habitat. See below or the beginning of the script for more information. And although the script also transform the SpecFlow projects whether it works as expected is not guaranteed as I do not have experience on SpecFlow at the moment.
 
 ## Disclaimer
 This script is written for personal interests and does not come with any quarantee. Use it at your own risk and feel free to modify it to suit your particular needs.
@@ -29,6 +29,42 @@ You need Windows Powershell and make sure you have the priviledge to execute a p
     .\TransformHabitat.ps1
     
 5. Follow the instructions on the screen.
+
+## Screenshots
+Below are some screenshots when installing a new Sitecore instance using SIM as well as while the script is running, and at the end some screenshots from Sitecore content tree and Visual Studio solution.
+
+#### SIM - Installing New Instance
+![SIM - Installing New Instance](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/SIM-Installing-new-instance.png)
+
+#### SIM - Including WFFM Modules
+![SIM - Including WFFM](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/SIM-Modules.png)
+
+#### Script Running Shot 1
+![Script Running 1](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/Script-Running1.png)
+
+#### Script Running Shot 2
+![Script Running 2](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/Script-Running2.png)
+
+#### Script Running Shot 3
+![Script Running 3](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/Script-Running3.png)
+
+#### Script Running Shot 4
+![Script Running 4](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/Script-Running4.png)
+
+#### Content Tree - Content
+![Content Tree - Content](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/newsite-content.png)
+
+#### Content Tree - Renderings
+![Content Tree - Renderings](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/newsite-renderings.png)
+
+#### Content Tree - Templates
+![Content Tree - Templates](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/newsite-templates.png)
+
+#### Visual Studio Solution
+![Visual Studio Solution](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/vs-solution.png)
+
+#### Visual Studio Solution - SpecFlow
+![Visual Studio Solution - SpecFlow](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/vs-test-solution.png)
 
 ## Troubleshoot
 You are on your own ;)

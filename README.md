@@ -16,7 +16,7 @@ As Habitat utilizes Node.js and Gulp so make sure:
 
     npm install -g gulp
 
-At the later part of the script will ask you if you wish to run the gulp script which will build the projects and sync Sitecore items via Unicorn. To be able to run this you will need to have an empty Sitecore (at the moment 8.2 Update 2) and the corresponding Web Forms for Marketers module installed. I recommend using [Sitecore Instance Manager](https://github.com/Sitecore/Sitecore-Instance-Manager) to install your local Sitecore instance. Keep a note at the host name used as the powershell script will ask for it when running.
+At the later part of the script will ask you if you wish to run the gulp script which will build the projects and sync Sitecore items via Unicorn. To be able to run this you will need to have an empty Sitecore (at the moment 8.2 Update 1, i.e. rev.161115) and the corresponding Web Forms for Marketers module installed. I recommend using [Sitecore Instance Manager](https://github.com/Sitecore/Sitecore-Instance-Manager) to install your local Sitecore instance. Keep a note at the host name used as the powershell script will ask for it when running.
 
 ## Usage
 You need Windows Powershell and make sure you have the priviledge to execute a powershell script. Then follow the steps below:

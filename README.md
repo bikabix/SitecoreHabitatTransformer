@@ -67,4 +67,6 @@ Below are some screenshots when installing a new Sitecore instance using SIM as 
 ![Visual Studio Solution - SpecFlow](https://raw.githubusercontent.com/codingdennis/images/master/Sitecore/vs-test-solution.png)
 
 ## Troubleshoot
-You are on your own ;)
+Mostly you are on your own ;) However below are some tips:
+* Do not name your solution "something"Habitat (for example DemoHabitat) which might cause some issues while renaming the project files.
+* I have noticed that while running the default gulp task it sometimes failed while copying files to web root. The issue is coming from the packages.config that resides in every module and their build action are not set to None (compared to web.config) and I guess because there are so many of them and if the computer is too fast copying files there will be a lock on the previous packages.config and the subsequential copy will fail to replace the previous one. You may either change the build action to None for all the packages.config files or keep deleting the packages.config in the web root while running the gulp task (if you are fast enough :P).
